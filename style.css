@@ -1,0 +1,95 @@
+header{
+    height: 400px;
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border: 1px solid black;
+    opacity:80%;
+}
+
+.one{
+    padding: 100px;
+    border: 1px solid black;
+    width: 1700px;
+    height: 450px;
+
+}
+
+.two{
+    padding-top: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 100px;
+    border: 1px solid black;
+    width: 1700px;
+    height: 450px;
+}
+
+.three{
+    padding: 100px;
+    border: 1px solid black;
+    width: 1700px;
+    height: 450px;
+
+}
+
+.sectionContainer{
+    display: flex;
+    margin: auto;
+
+}
+
+a{
+    text-decoration: none;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white; 
+    padding: 30px;
+    font-size: 20px;
+
+
+}
+
+.navitem{
+    padding: 30px;
+    display: inline;
+
+}
+
+nav{
+    margin-top: 30px;
+}
+
+a:hover{
+    background-color: grey;
+}
+
+.text{
+    color: rgb(7, 21, 87);
+    font-size: 30px;    
+    box-align: center;
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.masthead{
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 70rem;
+    background: linear-gradient(to bottom, rgb(7,21,87) 0%, rgba(0, 0, 0, 1) 75%, #000000 100%), url("../assets/img/bg-masthead.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+  }
+
+.topic{
+    text-align: center;
+    padding-top: 50px;
+    color: white;
+}
+
+.pic{
+    size: 30%
+}

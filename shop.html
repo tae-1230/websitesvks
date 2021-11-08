@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+    <meta name = "viewport" content = "width=device-width, initial scale = 1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Shop</title>
+</head>
+<body>
+    <header>
+        <nav>
+            </div class = "navitem"><a href = "index.html"> Home</a></div>
+            </div class = "navitem"><a href = "shop.html">Shop</a></div>
+            </div class = "navitem"><a href = "aboutme.html"> About Me</a></div>
+        </nav>
+    </header>
+            <div class = "text">
+                <form>
+                    <div>
+                        <label> Choose your color waterbottle:</label>
+                        <select id = "colors">
+                            <option class = "pic" value = "alpine.jpg" select = "selectced">Alpine</option>
+                            <option class = "pic" value = "carnation.jpg"> Carnation</option>
+                            <option class = "pic" value = "clementine.jpg"> Clementine</option>
+                            <option class = "pic" value = "olive.jpg">Olive</option>
+                            <option class = "pic" value = "rain.jpg"> Rain</option>
+                        </select>
+                
+                <img id = "current" src = "alpine.jpg"><br>
+                        
+                    </div>
+                </form>
+        
+                <form id = "costs">
+                    <input type = "checkbox" value = "30">
+                    <label> Bottle        $30</label>
+                    <br>
+                    <input type = "checkbox" value = "10">
+                    <label>+ Straw Lid             $10</label>
+                    <br>
+                    <input type = "checkbox" value = "5">
+                    <label>+ Basic Screw On Lid          $5</label>
+                </form>
+        
+                <button id = "button"> Calculate Total </button>
+                <div id = result></div>
+            </div>
+        
+            <script>
+                function setBottle(){
+                    document.getElementById("current").src = document.getElementById("colors").value;
+                }
+                
+                function calculateCost(){
+                    var totalCost = 0;
+                    var costs = document.getElementById("costs");
+                    for(var i = 0; i <3; i++){
+                        if(costs.elements[i].checked){
+                            totalCost += parseInt(costs.elements[i].value);
+                        }
+                    }
+                    document.getElementById("result").innerHTML = totalCost;
+                }
+        
+                document.getElementById("colors").addEventListener("click", setBottle);
+                document.getElementById("button").addEventListener("click", calculateCost);
+                
+        
+            </script>
+
+            </div>
+        </section>
+
+    </div>
+    <footer>
+
+    </footer> 
+</body>
+</html>
